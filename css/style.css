@@ -1,0 +1,313 @@
+body {
+	background-color: rgb(67, 67, 67);
+	line-height: 1.5;
+	font-size: 18px;
+	font-family: Roboto Mono, Helvetica, serif;
+	color: white;
+}
+
+[class*="__container"] {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 250px auto;
+	height: 100%;
+	overflow: auto;
+	max-width: 100%;
+}
+
+.answer-block {
+	padding: 20px;
+}
+
+@media (max-width:767.98px) {
+	.wrapper {
+		grid-template-columns: 200px auto;
+	}
+}
+
+@media (max-width:600px) {
+	.wrapper {
+		grid-template-columns: 100px auto;
+	}
+}
+
+h2 {
+	font-size: 22px;
+	margin: 15px;
+}
+
+/*=============== aside================= */
+.aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+	overflow: auto;
+	padding: 30px;
+	background-color: rgb(3, 3, 5);
+	height: 100%;
+	border-right: 3px solid rgb(246, 10, 1);
+	max-width: 170px;
+}
+
+@media (max-width:767.98px) {
+	.aside {
+		padding: 10px;
+	}
+}
+
+@media (max-width:476.98px) {
+	.aside {
+		font-size: 14px;
+	}
+}
+
+/*.aside__block {}*/
+.src {
+	color: #fe0000;
+	padding: 5px;
+	border-radius: 15px;
+	background-color: #fff;
+	margin-bottom: 150px;
+}
+
+.src:hover {
+	color: #036efa;
+	background-color: #b6b6b6;
+	transition: 0.3s ease 0s;
+
+}
+
+.aside__title {
+	font-size: 16px;
+	color: #ff0303;
+	display: inline-block;
+	transition: color 0.3s ease 0s;
+	padding-left: 20px;
+}
+
+.aside__title:hover {
+	color: rgb(249, 245, 245);
+}
+
+
+.aside__title:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.aside__navigation {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	font-size: 14px;
+	color: #036efa;
+	list-style-type: none;
+}
+
+.aside__item {}
+
+.aside__link {
+	font-size: 14px;
+	transition: color 0.3s ease 0s;
+}
+
+.aside__link:hover {
+	color: rgb(245, 246, 249);
+}
+
+/*===============Table================= */
+table {
+	font-size: 16px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tbody tr th {
+	padding: 3px;
+}
+
+tbody tr th {
+	border: 1px solid rgb(113, 112, 112);
+
+}
+
+.img-block {
+	max-width: 600px
+}
+
+.img {
+	width: 100%;
+}
+
+/*===============Check================= */
+
+.check {
+	font-size: 14px;
+	max-width: 300px;
+	margin-right: auto;
+	color: black;
+	background-color: white;
+}
+
+.check__body {
+	padding: 30px;
+}
+
+.check__title {
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.check__content {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.check__item {
+	border-bottom: 2px dotted black;
+}
+
+.check__item span {}
+
+.check__price span {
+	font-weight: 700;
+}
+
+.check__bottom {
+	padding-top: 20px;
+}
+
+.check__all-price {}
+
+.check__tax {}
+
+.check__thanks {
+	padding-top: 15px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/*===============Page================= */
+
+.page {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+
+.page__title {
+	font-size: 25px;
+	text-align: center;
+	font-weight: 600;
+	color: #fe0000;
+}
+
+.page__title a:hover {
+	text-decoration: underline;
+}
+
+
+.page__title:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.page__lesson {}
+
+.lesson-page {}
+
+.lesson-page__number {
+	/*text-align: center;*/
+	color: #fe0000;
+
+}
+
+.lesson-page__number:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.lesson-page__description {}
+
+.tasks-lesson__task {}
+
+.lesson-page__items {}
+
+.tasks-lesson {}
+
+.tasks-lesson__subtitle {
+	margin: 20px;
+	color: #036efa;
+}
+
+.tasks-lesson__subtitle-more {
+	margin: 20px;
+	color: #036efa;
+}
+
+.tasks-lesson__subtitle:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+.tasks-lesson__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.tasks-lesson__item {
+	padding: 15px;
+	border: 0.1px solid rgb(253, 2, 2);
+	border-radius: 10px;
+	list-style: none;
+	transition: background-color 0.3s ease 0s;
+}
+
+.tasks-lesson__item:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+.tasks-lesson__link {}
+
+.tasks-lesson__body {}
+
+.tasks-lesson__number-task {}
+
+.tasks-lesson__description {}
+
+.tasks-lesson__task {
+	padding-left: 20px;
+}
+
+.home__link {
+	text-align: end;
+	font-size: 30px;
+	padding: 20px;
+	color: #036efa;
+}
+
+.home__link:hover {
+	color: rgb(245, 246, 249);
+}
+
+.p-link {
+	color: #036efa;
+	margin: 30px;
+}
+
+.a-link:hover {
+	color: #fa0b03;
+}
